@@ -13,11 +13,11 @@ const Counter = () => {
   };
 
   const increaseHandler = () => {
-    dispatch(counterActions.increase);
+    dispatch(counterActions.increase(10));
   };
 
   const decrementtHandler = () => {
-    dispatch(counterActions.decrement);
+    dispatch(counterActions.decrement());
   }
 
   const toggleCounterHandler = () => {
